@@ -8,19 +8,16 @@
 </head>
 <body>
   <div class="main">
-    <h1>Hello, welcom to this website!</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum placeat veritatis sunt saepe cupiditate non necessitatibus odio, enim veniam fuga facilis ad sit error, repudiandae amet porro aliquam iusto vitae esse id. Voluptatum cum dolorem quidem sapiente! Distinctio itaque neque, natus error quas amet cum maxime, ad qui nisi voluptate.</p>
+    <img src="./img/standby.jpg" alt="">
   </div>
   
   <script>
-    document.querySelector('.main p').style.display = 'none';
-    document.querySelector('.main h1').style.display = 'none';
-    document.querySelector('.main').classList.add('spinner-1');
+    document.querySelector('.main img').style.display = 'none';
+    document.querySelector('.main').classList.add('spinner-2');
 
     setTimeout(() => {
-      document.querySelector('.main').classList.remove('spinner-1');
-      document.querySelector('.main h1').style.display = 'block';
-      document.querySelector('.main p').style.display = 'block';
+      document.querySelector('.main').classList.remove('spinner-2');
+      document.querySelector('.main img').style.display = 'block';
     }, 4000);
   </script>
 </body>
